@@ -4,151 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database Hama Tanaman Melon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #ddd;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-100 p-6">
+    <nav class="bg-white p-4 rounded shadow-md mb-6">
+        <ul class="flex space-x-4">
+            <li><a class="hover:underline text-blue-500" href="Untitled-3.html">Home</a></li>
+            <li><a class="hover:underline text-blue-500" href="Untitled-1.html">Database Penyakit</a></li>
+            <li><a class="hover:underline text-blue-500" href="Untitled-2.html">Database Hama</a></li>
+        </ul>
+    </nav>
 
-<h2>Database Hama Tanaman Melon</h2>
+    <h2 class="text-2xl font-bold mb-4">Database Hama Tanaman Melon</h2>
 
-<table>
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Nama Hama</th>
-            <th>Bagian yang Diserang</th>
-            <th>Ciri Daun</th>
-            <th>Ciri Akar</th>
-            <th>Ciri Batang</th>
-            <th>Ciri Buah</th>
-            <th>Ciri Bunga</th>
-            <th>Ciri Khusus</th>
-            <th>Cara Mengatasi</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Kutu Daun (Aphids)</td>
-            <td>Daun, Batang</td>
-            <td>Daun menguning, keriput, dan menggulung. Kotoran hitam (debu jelaga) di permukaan daun.</td>
-            <td>Akar tidak terlalu terpengaruh, tetapi tanaman akan kurang berkembang.</td>
-            <td>Batang tampak lemah, tumbuh kerdil.</td>
-            <td>Tidak terpengaruh langsung, namun tanaman rentan terhadap infeksi lainnya.</td>
-            <td>Bunga rontok jika tanaman stres berat.</td>
-            <td>Kutu daun menghisap cairan tanaman, menyebabkan tanaman lemah.</td>
-            <td>- Penyemprotan insektisida (contoh: imidakloprid).<br>- Penggunaan predator alami seperti ladybug.</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Lalat Buah (Bactrocera spp.)</td>
-            <td>Buah, Daun</td>
-            <td>Daun tidak terpengaruh langsung.</td>
-            <td>Akar tidak terpengaruh.</td>
-            <td>Batang tidak terpengaruh langsung.</td>
-            <td>Buah berlubang karena larva memakan daging buah, menyebabkan pembusukan.</td>
-            <td>Bunga dapat gugur akibat stres tanaman.</td>
-            <td>Lalat dewasa meletakkan telur pada buah, larva merusak buah.</td>
-            <td>- Pemasangan perangkap lalat buah (pheromone).<br>- Penggunaan insektisida untuk lalat buah.<br>- Panen buah lebih cepat.</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Ulat Grayak (Spodoptera litura)</td>
-            <td>Daun</td>
-            <td>Daun berlubang, terutama di bagian pinggir, daun menjadi tipis dan rusak.</td>
-            <td>Akar tidak terpengaruh langsung.</td>
-            <td>Tidak terpengaruh langsung kecuali kerusakan daun sangat parah.</td>
-            <td>Tidak terpengaruh langsung, namun defoliasi daun mengurangi hasil.</td>
-            <td>Bunga rontok jika kerusakan parah.</td>
-            <td>Ulat aktif makan daun, merusak jaringan tanaman.</td>
-            <td>- Penyemprotan insektisida (emamektin benzoat atau insektisida nabati).<br>- Pemangkasan daun terinfeksi.</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Kumbang Penggerek Batang (Diabrotica virgifera)</td>
-            <td>Akar, Batang</td>
-            <td>Daun menguning, kering akibat kerusakan pada batang.</td>
-            <td>Larva menggali dan merusak akar, tanaman lemah dan mudah tumbang.</td>
-            <td>Batang berlubang, rapuh, bisa mati.</td>
-            <td>Pertumbuhan buah terhambat.</td>
-            <td>Bunga gagal berkembang atau gugur lebih cepat.</td>
-            <td>Kumbang dewasa menggigit batang, larva merusak batang atau akar.</td>
-            <td>- Penyemprotan insektisida sistemik.<br>- Pengolahan tanah yang baik.<br>- Pemangkasan batang yang terinfeksi.</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Trips (Frankliniella spp.)</td>
-            <td>Daun, Bunga, Buah</td>
-            <td>Daun berbintik atau bercak-bercak keperakan, melengkung.</td>
-            <td>Tidak ada kerusakan langsung pada akar.</td>
-            <td>Tanaman bisa tampak stres.</td>
-            <td>Buah terdistorsi, terdapat bercak keperakan atau rusak di permukaan.</td>
-            <td>Bunga gagal berkembang dengan normal.</td>
-            <td>Serangga kecil ini menghisap cairan dari daun, bunga, dan buah, menyebabkan kerusakan kosmetik dan penurunan hasil.</td>
-            <td>- Penyemprotan insektisida piretroid atau nabati.<br>- Penggunaan perangkap kuning untuk menarik trips.</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Kumbang Kaktus (Cactophagus spp.)</td>
-            <td>Akar, Batang</td>
-            <td>Daun tidak terpengaruh.</td>
-            <td>Akar dimakan oleh larva kumbang, menyebabkan kerusakan akar utama.</td>
-            <td>Batang rusak, berlubang akibat aktivitas larva kumbang.</td>
-            <td>Tanaman yang terinfeksi sering gagal menghasilkan buah sehat.</td>
-            <td>Bunga terhambat atau gugur.</td>
-            <td>Kumbang dewasa menggigit batang dan akar, larva menggali di batang atau akar.</td>
-            <td>- Penyemprotan insektisida sistemik.<br>- Pengolahan tanah yang baik.<br>- Pemangkasan batang yang terinfeksi.</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Nematoda Penggerek Akar (Meloidogyne spp.)</td>
-            <td>Akar</td>
-            <td>Daun menguning dan layu, tanaman tumbuh terhambat.</td>
-            <td>Akar terinfeksi tampak bengkak (gall) atau rusak.</td>
-            <td>Batang tumbuh kerdil dan lemah.</td>
-            <td>Buah menjadi kecil dan berbintik-bintik akibat gangguan akar.</td>
-            <td>Bunga terhambat atau gugur.</td>
-            <td>Nematoda menyerang akar, mengurangi kemampuan akar menyerap air dan nutrisi.</td>
-            <td>- Penggunaan nematisida.<br>- Rotasi tanaman dan penggunaan varietas tahan nematoda.</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Kumbang Tanah (Tenebrio molitor)</td>
-            <td>Akar, Batang, Daun</td>
-            <td>Daun kuning dan layu akibat gangguan akar.</td>
-            <td>Akar dimakan larva kumbang, mengurangi kemampuan tanaman bertahan hidup.</td>
-            <td>Batang terhambat tumbuhnya, terkadang rusak akibat makan larva.</td>
-            <td>Buah terhambat perkembangan atau menjadi kecil.</td>
-            <td>Bunga rontok akibat kerusakan akar dan batang.</td>
-            <td>Kumbang ini hidup di tanah, larva merusak akar dan bagian tanaman lainnya.</td>
-            <td>- Penyemprotan insektisida.<br>- Pengolahan tanah untuk mengurangi populasi larva kumbang.</td>
-        </tr>
-    </tbody>
-</table>
-
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white rounded shadow-md">
+            <thead>
+                <tr>
+                    <th class="py-2 px-4 bg-green-500 text-white">No</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Nama Hama</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Bagian yang Diserang</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Daun</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Akar</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Batang</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Buah</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Bunga</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Ciri Khusus</th>
+                    <th class="py-2 px-4 bg-green-500 text-white">Cara Mengatasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                    <td class="py-2 px-4 border">1</td>
+                    <td class="py-2 px-4 border">Kutu Daun (Aphids)</td>
+                    <td class="py-2 px-4 border">Daun, Batang</td>
+                    <td class="py-2 px-4 border">Daun menguning, keriput, dan menggulung. Kotoran hitam (debu jelaga) di permukaan daun.</td>
+                    <td class="py-2 px-4 border">Akar tidak terlalu terpengaruh, tetapi tanaman akan kurang berkembang.</td>
+                    <td class="py-2 px-4 border">Batang tampak lemah, tumbuh kerdil.</td>
+                    <td class="py-2 px-4 border">Tidak terpengaruh langsung, namun tanaman rentan terhadap infeksi lainnya.</td>
+                    <td class="py-2 px-4 border">Bunga rontok jika tanaman stres berat.</td>
+                    <td class="py-2 px-4 border">Kutu daun menghisap cairan tanaman, menyebabkan tanaman lemah.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida (contoh: imidakloprid).<br>- Penggunaan predator alami seperti ladybug.</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="py-2 px-4 border">2</td>
+                    <td class="py-2 px-4 border">Lalat Buah (Bactrocera spp.)</td>
+                    <td class="py-2 px-4 border">Buah, Daun</td>
+                    <td class="py-2 px-4 border">Daun tidak terpengaruh langsung.</td>
+                    <td class="py-2 px-4 border">Akar tidak terpengaruh.</td>
+                    <td class="py-2 px-4 border">Batang tidak terpengaruh langsung.</td>
+                    <td class="py-2 px-4 border">Buah berlubang karena larva memakan daging buah, menyebabkan pembusukan.</td>
+                    <td class="py-2 px-4 border">Bunga dapat gugur akibat stres tanaman.</td>
+                    <td class="py-2 px-4 border">Lalat dewasa meletakkan telur pada buah, larva merusak buah.</td>
+                    <td class="py-2 px-4 border">- Pemasangan perangkap lalat buah (pheromone).<br>- Penggunaan insektisida untuk lalat buah.<br>- Panen buah lebih cepat.</td>
+                </tr>
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                    <td class="py-2 px-4 border">3</td>
+                    <td class="py-2 px-4 border">Ulat Grayak (Spodoptera litura)</td>
+                    <td class="py-2 px-4 border">Daun</td>
+                    <td class="py-2 px-4 border">Daun berlubang, terutama di bagian pinggir, daun menjadi tipis dan rusak.</td>
+                    <td class="py-2 px-4 border">Akar tidak terpengaruh langsung.</td>
+                    <td class="py-2 px-4 border">Tidak terpengaruh langsung kecuali kerusakan daun sangat parah.</td>
+                    <td class="py-2 px-4 border">Tidak terpengaruh langsung, namun defoliasi daun mengurangi hasil.</td>
+                    <td class="py-2 px-4 border">Bunga rontok jika kerusakan parah.</td>
+                    <td class="py-2 px-4 border">Ulat aktif makan daun, merusak jaringan tanaman.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida (emamektin benzoat atau insektisida nabati).<br>- Pemangkasan daun terinfeksi.</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="py-2 px-4 border">4</td>
+                    <td class="py-2 px-4 border">Kumbang Penggerek Batang (Diabrotica virgifera)</td>
+                    <td class="py-2 px-4 border">Akar, Batang</td>
+                    <td class="py-2 px-4 border">Daun menguning, kering akibat kerusakan pada batang.</td>
+                    <td class="py-2 px-4 border">Larva menggali dan merusak akar, tanaman lemah dan mudah tumbang.</td>
+                    <td class="py-2 px-4 border">Batang berlubang, rapuh, bisa mati.</td>
+                    <td class="py-2 px-4 border">Pertumbuhan buah terhambat.</td>
+                    <td class="py-2 px-4 border">Bunga gagal berkembang atau gugur lebih cepat.</td>
+                    <td class="py-2 px-4 border">Kumbang dewasa menggigit batang, larva merusak batang atau akar.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida sistemik.<br>- Pengolahan tanah yang baik.<br>- Pemangkasan batang yang terinfeksi.</td>
+                </tr>
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                    <td class="py-2 px-4 border">5</td>
+                    <td class="py-2 px-4 border">Trips (Frankliniella spp.)</td>
+                    <td class="py-2 px-4 border">Daun, Bunga, Buah</td>
+                    <td class="py-2 px-4 border">Daun berbintik atau bercak-bercak keperakan, melengkung.</td>
+                    <td class="py-2 px-4 border">Tidak ada kerusakan langsung pada akar.</td>
+                    <td class="py-2 px-4 border">Tanaman bisa tampak stres.</td>
+                    <td class="py-2 px-4 border">Buah terdistorsi, terdapat bercak keperakan atau rusak di permukaan.</td>
+                    <td class="py-2 px-4 border">Bunga gagal berkembang dengan normal.</td>
+                    <td class="py-2 px-4 border">Serangga kecil ini menghisap cairan dari daun, bunga, dan buah, menyebabkan kerusakan kosmetik dan penurunan hasil.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida piretroid atau nabati.<br>- Penggunaan perangkap kuning untuk menarik trips.</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="py-2 px-4 border">6</td>
+                    <td class="py-2 px-4 border">Kumbang Kaktus (Cactophagus spp.)</td>
+                    <td class="py-2 px-4 border">Akar, Batang</td>
+                    <td class="py-2 px-4 border">Daun tidak terpengaruh.</td>
+                    <td class="py-2 px-4 border">Akar dimakan oleh larva kumbang, menyebabkan kerusakan akar utama.</td>
+                    <td class="py-2 px-4 border">Batang rusak, berlubang akibat aktivitas larva kumbang.</td>
+                    <td class="py-2 px-4 border">Tanaman yang terinfeksi sering gagal menghasilkan buah sehat.</td>
+                    <td class="py-2 px-4 border">Bunga terhambat atau gugur.</td>
+                    <td class="py-2 px-4 border">Kumbang dewasa menggigit batang dan akar, larva menggali di batang atau akar.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida sistemik.<br>- Pengolahan tanah yang baik.<br>- Pemangkasan batang yang terinfeksi.</td>
+                </tr>
+                <tr class="bg-gray-50 hover:bg-gray-100">
+                    <td class="py-2 px-4 border">7</td>
+                    <td class="py-2 px-4 border">Nematoda Penggerek Akar (Meloidogyne spp.)</td>
+                    <td class="py-2 px-4 border">Akar</td>
+                    <td class="py-2 px-4 border">Daun menguning dan layu, tanaman tumbuh terhambat.</td>
+                    <td class="py-2 px-4 border">Akar terinfeksi tampak bengkak (gall) atau rusak.</td>
+                    <td class="py-2 px-4 border">Batang tumbuh kerdil dan lemah.</td>
+                    <td class="py-2 px-4 border">Buah menjadi kecil dan berbintik-bintik akibat gangguan akar.</td>
+                    <td class="py-2 px-4 border">Bunga terhambat atau gugur.</td>
+                    <td class="py-2 px-4 border">Nematoda menyerang akar, mengurangi kemampuan akar menyerap air dan nutrisi.</td>
+                    <td class="py-2 px-4 border">- Penggunaan nematisida.<br>- Rotasi tanaman dan penggunaan varietas tahan nematoda.</td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="py-2 px-4 border">8</td>
+                    <td class="py-2 px-4 border">Kumbang Tanah (Tenebrio molitor)</td>
+                    <td class="py-2 px-4 border">Akar, Batang, Daun</td>
+                    <td class="py-2 px-4 border">Daun kuning dan layu akibat gangguan akar.</td>
+                    <td class="py-2 px-4 border">Akar dimakan larva kumbang, mengurangi kemampuan tanaman bertahan hidup.</td>
+                    <td class="py-2 px-4 border">Batang terhambat tumbuhnya, terkadang rusak akibat makan larva.</td>
+                    <td class="py-2 px-4 border">Buah terhambat perkembangan atau menjadi kecil.</td>
+                    <td class="py-2 px-4 border">Bunga rontok akibat kerusakan akar dan batang.</td>
+                    <td class="py-2 px-4 border">Kumbang ini hidup di tanah, larva merusak akar dan bagian tanaman lainnya.</td>
+                    <td class="py-2 px-4 border">- Penyemprotan insektisida.<br>- Pengolahan tanah untuk mengurangi populasi larva kumbang.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
